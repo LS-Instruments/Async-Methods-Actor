@@ -14,7 +14,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Example" Type="Folder">
 			<Item Name="Async Methods Actor Example.lvlib" Type="Library" URL="../Async Methods Actor Example/Async Methods Actor Example.lvlib"/>
-			<Item Name="Launcher.vi" Type="VI" URL="../Async Methods Actor Example/Async Methods Actor Example/Launcher.vi"/>
 		</Item>
 		<Item Name="Async Methods Actor.lvlib" Type="Library" URL="../Async Methods Actor/Async Methods Actor.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
