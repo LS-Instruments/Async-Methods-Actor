@@ -13,9 +13,11 @@
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="abstract" Type="Folder">
 			<Item Name="Async Message.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Async Message/Async Message.lvclass"/>
+			<Item Name="Completion Notification Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Completion Notification Msg/Completion Notification Msg.lvclass"/>
 		</Item>
 		<Item Name="internal" Type="Folder">
-			<Item Name="Acknowledge Execution Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Acknowledge Execution Msg/Acknowledge Execution Msg.lvclass"/>
+			<Item Name="Acknowledge Completion Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Acknowledge Completion Msg/Acknowledge Completion Msg.lvclass"/>
+			<Item Name="Notify Completion Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Notify Completion Msg/Notify Completion Msg.lvclass"/>
 			<Item Name="Remove Async Message from Map Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Remove Async Message from Map Msg/Remove Async Message from Map Msg.lvclass"/>
 			<Item Name="Write Kill Methods On Exit Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Messages/Write Kill Methods On Exit Msg/Write Kill Methods On Exit Msg.lvclass"/>
 		</Item>
@@ -23,6 +25,8 @@
 	<Item Name="Palette" Type="Folder">
 		<Item Name="Async Message.vi" Type="VI" URL="../Async Methods Actor Palette/Async Message.vi"/>
 		<Item Name="Async Methods Actor.vi" Type="VI" URL="../Async Methods Actor Palette/Async Methods Actor.vi"/>
+		<Item Name="Open Example.vi" Type="VI" URL="../Async Methods Actor Palette/Open Example.vi"/>
 	</Item>
 	<Item Name="Async Methods Actor.lvclass" Type="LVClass" URL="../Async Methods Actor/Async Methods Actor.lvclass"/>
+	<Item Name="Completion Notification Msg.vi" Type="VI" URL="../Async Methods Actor Palette/Completion Notification Msg.vi"/>
 </Library>

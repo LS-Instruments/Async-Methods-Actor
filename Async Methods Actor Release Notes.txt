@@ -1,4 +1,9 @@
 Async Methods Actor Release Notes
 
+v0.2.0
+- Added an infrastructure that enables the caller of Async Message to be informed about the completion of "Call and Collect" Async methods
+- Now every executed Async Message is identified by a GUID
+- It is now possible to choose a communication method (notifiers or event) by which a subscriber can be informed about currently running "Call and Collect" Async methods and launched running "Call and Forget" Async methods. The communication is off by default
+- Completed and updated README.md documentation and methods/properties docstrings
 v0.1.0
 - Initial public release
