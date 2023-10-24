@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-03 17:40:35" Modified_Date="2023-10-21 20:38:51" Creator="AndreaVaccaro(LSInst" Comments="" ID="d3de9e76b255590fd0649e5b8d11164b">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-03 17:40:35" Modified_Date="2023-10-24 00:12:41" Creator="AndreaVaccaro(LSInst" Comments="" ID="e666845bf591ccea4a15a8937ffa0061">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_Async_Methods_Actor</Package_File_Name>
-    <Library_Version>0.2.0.9</Library_Version>
+    <Library_Version>0.2.0.10</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -138,6 +138,9 @@
       </Namespace_Overrides>
       <Exclusions>
         <Path>Async Methods Actor.lvproj</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>vipm packages</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
@@ -298,7 +301,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Completion Notification Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0E9C4EA2DBAF27E9974F83E095B6C24C</GUID>
+      <GUID>31A83BD13AC1CE45E1DE73E9A05619F1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -333,7 +336,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Open Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>268135F3A5638266DD089E14583442A9</GUID>
+      <GUID>B27BACF82705E637C92AFDAFA968E6AD</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -424,7 +427,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Async Methods Actor.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7C62ED9A5D15A5194D3676DCC12E5980</GUID>
+      <GUID>6E43D19FA78767A2DD88E59F5513EB86</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
