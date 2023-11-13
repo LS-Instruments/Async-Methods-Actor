@@ -12,6 +12,9 @@ The "Async Methods Actor" is an actor-based library that implements an infrastru
 
 If you want to get more control over the asynchronous call you can use the "Send Async Message.vi" method of the "Async Message.lvclass" class. To method you wire the message object you have created (possibly configured to match the input of your actor method by means of suitable property modes) and optionally an "Async Call Method" enum that can take values "Call and Collect" or "Call and forget". The message can be also configured by setting a previously created concrete subclass of the "Completion Notification Msg" and a caller enqueuer, if both settings are performed upon completion of the "Call and Collect" Async Message method the Async Method Actor will send the aforementioned concrete "Completion Notification Msg" message to the caller that will enable the caller to obtain a copy of the Async Message and the current number of running "Call and Collect" messages of this kind. The copy of the message will allow the caller to access the GUID and FQN of the conclude Async Message by means of the corresponding Async Message properties
 
+## Example Code
+The library comes with an example that illustrates the full API. Within the source tree the examples can be found at the path `./Async Methods Actor Example`. When installing the VIPM package you will find the example at the path `(LabVIEW Root Path)/examples/LS Instruments AG/Async Methods Actor/Async Methods Actor Example`
+
 # Methods and Classes documentation
 
 ## The "Async Methods Actor.lvclass" Actor Class
