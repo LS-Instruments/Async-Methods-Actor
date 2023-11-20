@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-03 17:40:35" Modified_Date="2023-10-24 00:12:41" Creator="AndreaVaccaro(LSInst" Comments="" ID="e666845bf591ccea4a15a8937ffa0061">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-03 17:40:35" Modified_Date="2023-11-20 23:37:48" Creator="AndreaVaccaro(LSInst" Comments="" ID="3e2a2eb91121191f8e98de38a2d1e8a7">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_Async_Methods_Actor</Package_File_Name>
-    <Library_Version>0.2.0.10</Library_Version>
+    <Library_Version>0.2.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -19,6 +19,7 @@
     <Package_Dependencies>
       <External_Dependencies>oglib_error &gt;= 4.2.0.23</External_Dependencies>
       <External_Dependencies>oglib_lvdata &gt;= 5.0.0.27</External_Dependencies>
+      <Additional_External_Dependencies>vipm_lib_labview_collection_extensions &gt;=0.4.0.38</Additional_External_Dependencies>
       <Direct_Dependencies>oglib_error-4.2.0.23</Direct_Dependencies>
       <Direct_Dependencies>oglib_lvdata-5.0.0.27</Direct_Dependencies>
     </Package_Dependencies>
@@ -37,9 +38,7 @@
       <Copyright/>
       <Packager>Andrea Vaccaro</Packager>
       <URL>https://github.com/LS-Instruments/Async-Methods-Actor</URL>
-      <Release_Notes>- Added an infrastructure that enables the caller of Async Message to be informed about completion of "Call and Collect" Async methods
-- Now every executed Async Message is identified by a GUID
-- It is now possible to choose a communication method (notifiers or event) by which a subscriber can be informed about currently running "Call and Collect" Async methods and launched running "Call and Forget" Async methods. The communication is off by default</Release_Notes>
+      <Release_Notes>- FIxed a missing dependency in the vipm package</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -301,7 +300,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Completion Notification Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>31A83BD13AC1CE45E1DE73E9A05619F1</GUID>
+      <GUID>01F369BD17911A5491819A42DCE766FA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -336,7 +335,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Open Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B27BACF82705E637C92AFDAFA968E6AD</GUID>
+      <GUID>E59474D2DE1E9B2F898BE4C3AAE0EC40</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -427,7 +426,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Async Methods Actor.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6E43D19FA78767A2DD88E59F5513EB86</GUID>
+      <GUID>C2068D30105B85172A08028403417B44</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
