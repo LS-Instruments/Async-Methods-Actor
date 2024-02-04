@@ -11,6 +11,7 @@
 		<Item Name="Async Messages" Type="Folder">
 			<Item Name="Alternative Long Execution Method Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Alternative Long Exec Meth Msg/Alternative Long Execution Method Msg.lvclass"/>
 			<Item Name="Long Execution Method Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Long Execution Method Msg/Long Execution Method Msg.lvclass"/>
+			<Item Name="VI Refnum Lifetime Test Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/VI Refnum Lifetime Test Msg/VI Refnum Lifetime Test Msg.lvclass"/>
 		</Item>
 		<Item Name="Ack Completion Long Exec Meth Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Ack Completion Long Exec Meth Msg/Ack Completion Long Exec Meth Msg.lvclass"/>
 		<Item Name="Cancel Long Exec MetH Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Cancel Long Execution Methods Msg/Cancel Long Exec MetH Msg.lvclass"/>

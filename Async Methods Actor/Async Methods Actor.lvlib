@@ -25,8 +25,8 @@
 	<Item Name="Palette" Type="Folder">
 		<Item Name="Async Message.vi" Type="VI" URL="../Async Methods Actor Palette/Async Message.vi"/>
 		<Item Name="Async Methods Actor.vi" Type="VI" URL="../Async Methods Actor Palette/Async Methods Actor.vi"/>
+		<Item Name="Completion Notification Msg.vi" Type="VI" URL="../Async Methods Actor Palette/Completion Notification Msg.vi"/>
 		<Item Name="Open Example.vi" Type="VI" URL="../Async Methods Actor Palette/Open Example.vi"/>
 	</Item>
 	<Item Name="Async Methods Actor.lvclass" Type="LVClass" URL="../Async Methods Actor/Async Methods Actor.lvclass"/>
-	<Item Name="Completion Notification Msg.vi" Type="VI" URL="../Async Methods Actor Palette/Completion Notification Msg.vi"/>
 </Library>

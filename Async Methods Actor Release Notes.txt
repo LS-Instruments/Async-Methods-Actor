@@ -1,5 +1,6 @@
 Async Methods Actor Release Notes
-
+v0.3.0
+- Introduced a "VI Refnum Lifetime" enumeration which can take values "Destroy on Exit", " Destroy on Actor Exit ", and “Destroy on Application Exit”. This enumeration dictates the lifetime strategy adopted for the VI Server Refnum of the Async Method. In the first case the "Async Methods Actor" destroys the reference as soon as the Async Method exits, in the second case the VI Refnums will be destroyed once the “Async Method Actor” exits, while in the last case, VI Refnums are never destroyed. “Destroy on Exit” is the default option when unwired. The motivation for this setting is related to the required lifetimes of the refnums (e.g. notifier’s references) created within the Async Method. This lifetime is the same as the VI Refnum lifetime, hence if we want they outlive the execution of the Async Method we have to set it to either “Destroy on Actor Exit” or “Destroy on Application Exit”. This option applies only to Async Methods called with the “Call and Collect” option.
 v0.2.0
 - Added an infrastructure that enables the caller of Async Message to be informed about the completion of "Call and Collect" Async methods
 - Now every executed Async Message is identified by a GUID
