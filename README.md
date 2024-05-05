@@ -43,6 +43,8 @@ an "Async Call Method" enumeration. This can take values "Call and Collect" and 
 
 a "VI Refnum Lifetime" enumeration. This can take values "Destroy on Exit", " Destroy on Actor Exit ", and “Destroy on Application Exit”. This enumeration dictates the lifetime strategy adopted for the VI Refnum of the Async Method. In the first case the "Async Methods Actor" destroys the reference as soon as the Async Method Exits, in the second case the VI Refnums will be destroyed once the “Async Method Actor” exits, while in the last case, VI Refnums are never destroyed. “Destroy on Exit” is the default option when unwired. The motivation for this setting is related to the required lifetimes of the Refnums (e.g. notifier’s references) created within the Async Method. This lifetime is the same as the VI Refnum lifetime, hence if we want they outlive the execution of the Async Method we have to set it to either “Destroy on Actor Exit” or “Destroy on Application Exit”. This option applies only to Async Methods called with the “Call and Collect” option.
 
+*a "Report Errors (T)" Boolean. If True the standard error output of the Async Method will be reported to the calling actor.*
+
 
 ### The "Caller Enqueuer" property
 
@@ -54,8 +56,12 @@ Sets the caller equeueur to which notify  the completion of the Async Method by 
 
 ![Completion Notification Message Property](media/Completion%20Notification%20Message%20Property.png)
 
-Sets a concrete subclass of the "Completion Notification Msg.lvclass" abstract message to notify the caller (specified by the "Caller Enqueuer" property) about completion of Async Message. The caller will receive the completed Async Message allowing the access by means of it property to its GUID and FQN as well as the remaining number of "Call and Collect" Async Messages of the same type. To enable the callee Async Methods Acor to notify completion both this property and the "Caller Enqueuer" must be properly set.
+Sets a concrete subclass of the "Completion Notification Msg.lvclass" abstract message (or of the "Compl Notif with Error Msg.lvclass" abstract message) to notify the caller (specified by the "Caller Enqueuer" property) about completion of Async Message. The caller will receive the completed Async Message allowing the access by means of its property to its GUID and FQN as well as the remaining number of "Call and Collect" Async Messages of the same type. To enable the callee Async Methods Acor to notify completion both this property and the "Caller Enqueuer" must be properly set.
 
 ## The "Completion Notification Msg.lvclass" abstract message
 
 A concrete subclass of this abstract message is used to send the caller information about the Call & Collect Async Message whose execution comes to completion. Information includes the message itself, including its FQN and GUID accessible by the corresponding properties, and the current number of running Call & Collect Async Messages of this type
+
+## The "Compl Notif with Error Msg.lvclass" abstract message
+
+This abstract class is a subclass of the “Completion Notification Msg" class, besides its functionality this class merges the error generated as standard error output by the Async Method just called to the standard error input of the dynamic dispatch method "Do Core.vi". Hence concrete subclasses of this class must override the "Do Core.vi" method to perform suitable method calls.
