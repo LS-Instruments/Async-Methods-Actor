@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-03 17:40:35" Modified_Date="2024-05-05 14:58:24" Creator="AndreaVaccaro(LSInst" Comments="" ID="2f087cd37d4406a0de4bb016e58eb113">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-03 17:40:35" Modified_Date="2025-10-07 17:41:27" Creator="AndreaVaccaro(LSInst" Comments="" ID="369d7f232666b2d709080b00b0447082">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_Async_Methods_Actor</Package_File_Name>
-    <Library_Version>0.3.0.5</Library_Version>
+    <Library_Version>1.0.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -38,9 +38,8 @@
       <Copyright/>
       <Packager>Andrea Vaccaro</Packager>
       <URL>https://github.com/LS-Instruments/Async-Methods-Actor</URL>
-      <Release_Notes>- Introduced a "VI Refnum Lifetime" enumeration which can take values "Destroy on Exit", " Destroy on Actor Exit ", and “Destroy on Application Exit”. This enumeration dictates the lifetime strategy adopted for the VI Server Refnum of the Async Method. In the first case the "Async Methods Actor" destroys the reference as soon as the Async Method exits, in the second case the VI Refnums will be destroyed once the “Async Method Actor” exits, while in the last case, VI Refnums are never destroyed. “Destroy on Exit” is the default option when un-wired. The motivation for this setting is related to the required lifetimes of the refnums (e.g. notifier’s references) created within the Async Method. This lifetime is the same as the VI Refnum lifetime, hence if we want they outlive the execution of the Async Method we have to set it to either “Destroy on Actor Exit” or “Destroy on Application Exit”. This option applies only to Async Methods called with the “Call and Collect” option (Issue # 3)
-- Added the functionality of reporting the standard error output of the Async Method to the calling actor (Issue #4)
-- Added the ability to to access the error in the Async Method standard output form within the "Completion Notification Msg" message. A further abstract subclass called "Compl Notif with Error Msg" was introduced whose Do.vi method merges the standard error output of the Async Method executed and that defines a new dynamic dispatch method to be overridden, called "Actor Core.vi" to implement a caller Actor method call (Issue #1)</Release_Notes>
+      <Release_Notes>- Removed unused Async Message property write methods
+- Added a "Async Message Settings" to be used by the LS AF Message Maker to create send methods for the concrete Async Messages</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -302,7 +301,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Completion Notification Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6A60AB8574299CB8C528F54D620C397F</GUID>
+      <GUID>9D069D404F8FA8E51C71F20EFCE1EEE5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -337,7 +336,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Open Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5EBA6AC249EB99ECC6AEAEE042A33B34</GUID>
+      <GUID>95E081291A0843B2C06DD31DA0E525BE</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -442,7 +441,7 @@
         <Path>Async Methods Actor\Async Methods Actor Palette\Compl Notif with Error Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2AB3D93A59F92C9ECF9C8DAEADD6A585</GUID>
+      <GUID>E75B2E7CB2EB9106ADB2B811717497B7</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
