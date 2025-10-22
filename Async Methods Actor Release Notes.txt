@@ -2,6 +2,7 @@ Async Methods Actor Release Notes
 v1.0.0
 - Removed unused Async Message property write methods
 - Added a "Async Message Settings" to be used by the LS AF Message Maker to create send methods for the concrete Async Messages
+- Removed dependencies on OpenG Error and Variant libraries. This allows exporting code to previous versions of LabVIEW
 v0.3.0
 - Introduced a "VI Refnum Lifetime" enumeration which can take values "Destroy on Exit", " Destroy on Actor Exit ", and “Destroy on Application Exit”. This enumeration dictates the lifetime strategy adopted for the VI Server Refnum of the Async Method. In the first case the "Async Methods Actor" destroys the reference as soon as the Async Method exits, in the second case the VI Refnums will be destroyed once the “Async Method Actor” exits, while in the last case, VI Refnums are never destroyed. “Destroy on Exit” is the default option when un-wired. The motivation for this setting is related to the required lifetimes of the refnums (e.g. notifier’s references) created within the Async Method. This lifetime is the same as the VI Refnum lifetime, hence if we want they outlive the execution of the Async Method we have to set it to either “Destroy on Actor Exit” or “Destroy on Application Exit”. This option applies only to Async Methods called with the “Call and Collect” option (Issue # 3)
 - Added the functionality of reporting the standard error output of the Async Method to the calling actor (Issue #4)
