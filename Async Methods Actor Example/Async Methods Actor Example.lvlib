@@ -9,7 +9,7 @@
 </Property>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="Async Messages" Type="Folder">
-			<Item Name="Alternative Long Execution Method Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Alternative Long Exec Meth Msg/Alternative Long Execution Method Msg.lvclass"/>
+			<Item Name="Alternative Long Execution Method Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Alternative Long Execution Method Msg/Alternative Long Execution Method Msg.lvclass"/>
 			<Item Name="Error Reporting Test Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Error Reporting Test Msg/Error Reporting Test Msg.lvclass"/>
 			<Item Name="Long Execution Method Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/Long Execution Method Msg/Long Execution Method Msg.lvclass"/>
 			<Item Name="VI Refnum Lifetime Test Msg.lvclass" Type="LVClass" URL="../Async Methods Actor Example Messages/VI Refnum Lifetime Test Msg/VI Refnum Lifetime Test Msg.lvclass"/>
