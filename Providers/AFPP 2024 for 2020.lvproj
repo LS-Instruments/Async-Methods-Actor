@@ -15,13 +15,13 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="GProviders" Type="Folder">
-			<Item Name="AddActor.ini" Type="Document" URL="../GProviders/AddActor.ini"/>
+			<Item Name="AddAsyncMethodsActor.ini" Type="Document" URL="../GProviders/AddAsyncMethodsActor.ini"/>
 		</Item>
 		<Item Name="Install Support" Type="Folder">
 			<Item Name="AFPP Post-Uninstall Custom Action.vi" Type="VI" URL="../Install Support/AFPP Post-Uninstall Custom Action.vi"/>
 			<Item Name="AFPP Pre-Install Custom Action.vi" Type="VI" URL="../Install Support/AFPP Pre-Install Custom Action.vi"/>
 		</Item>
-		<Item Name="Add Actor.lvlib" Type="Library" URL="../AddActor/Add Actor.lvlib"/>
+		<Item Name="Add Async Methods Actor.lvlib" Type="Library" URL="../AddAsyncMethodsActor/Add Async Methods Actor.lvlib"/>
 		<Item Name="AFPP Shared.lvlib" Type="Library" URL="../AFPP Shared/AFPP Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
