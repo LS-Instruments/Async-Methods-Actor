@@ -36,11 +36,13 @@
 	<Item Name="Classes" Type="Folder">
 		<Item Name="Actor Store.lvclass" Type="LVClass" URL="../Classes/Actor Store/Actor Store.lvclass"/>
 		<Item Name="INI Store.lvclass" Type="LVClass" URL="../Classes/INI Store/INI Store.lvclass"/>
+		<Item Name="Live Store.lvclass" Type="LVClass" URL="../Classes/Live Store/Live Store.lvclass"/>
 		<Item Name="Target Store.lvclass" Type="LVClass" URL="../Classes/Target Store/Target Store.lvclass"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
-		<Item Name="Add Actor Library to Project.vi" Type="VI" URL="../Support/Add Actor Library to Project.vi"/>
-		<Item Name="Add Actor.vi" Type="VI" URL="../Support/Add Actor.vi"/>
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="Add Async Methods Actor Library to Project.vi" Type="VI" URL="../Support/Add Async Methods Actor Library to Project.vi"/>
+		<Item Name="Add Async Methods Actor.vi" Type="VI" URL="../Support/Add Async Methods Actor.vi"/>
 		<Item Name="Create Child Actor.vi" Type="VI" URL="../Support/Create Child Actor.vi"/>
 		<Item Name="Get Actor List.vi" Type="VI" URL="../Support/Get Actor List.vi"/>
 		<Item Name="Get Default Actor Class Path.vi" Type="VI" URL="../Support/Get Default Actor Class Path.vi"/>
@@ -48,7 +50,6 @@
 		<Item Name="Localized Strings.vi" Type="VI" URL="../Support/Localized Strings.vi"/>
 		<Item Name="Save Actor DB.vi" Type="VI" URL="../Support/Save Actor DB.vi"/>
 		<Item Name="Select an Actor.vi" Type="VI" URL="../Support/Select an Actor.vi"/>
-		<Item Name="What To Make.ctl" Type="VI" URL="../Support/What To Make.ctl"/>
 	</Item>
 	<Item Name="CreateNewWizard_GetWeight.vi" Type="VI" URL="../CreateNewWizard_GetWeight.vi"/>
 	<Item Name="CreateNewWizard_IncludeItem.vi" Type="VI" URL="../CreateNewWizard_IncludeItem.vi"/>

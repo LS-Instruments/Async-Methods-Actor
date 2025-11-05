@@ -1,0 +1,1 @@
+This file is installed by the Async Methods Actor Project Providers VIPM package and it is used by such package to check its installation. It SHOULD NOT be installed by the main Async Methods Actor VIPM Package

@@ -18,11 +18,11 @@
 			<Item Name="AddAsyncMethodsActor.ini" Type="Document" URL="../GProviders/AddAsyncMethodsActor.ini"/>
 		</Item>
 		<Item Name="Install Support" Type="Folder">
-			<Item Name="AFPP Post-Uninstall Custom Action.vi" Type="VI" URL="../Install Support/AFPP Post-Uninstall Custom Action.vi"/>
-			<Item Name="AFPP Pre-Install Custom Action.vi" Type="VI" URL="../Install Support/AFPP Pre-Install Custom Action.vi"/>
+			<Item Name="AMAFPP Pre-Install Custom Action.vi" Type="VI" URL="../Install Support/AMAFPP Pre-Install Custom Action.vi"/>
+			<Item Name="AMAPP Post-Uninstall Custom Action.vi" Type="VI" URL="../Install Support/AMAPP Post-Uninstall Custom Action.vi"/>
 		</Item>
 		<Item Name="Add Async Methods Actor.lvlib" Type="Library" URL="../AddAsyncMethodsActor/Add Async Methods Actor.lvlib"/>
-		<Item Name="AFPP Shared.lvlib" Type="Library" URL="../AFPP Shared/AFPP Shared.lvlib"/>
+		<Item Name="AFPP Shared.lvlib" Type="Library" URL="../AddAsyncMethodsActor/AFPP Shared/AFPP Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add File to Zip.vi" Type="VI" URL="/&lt;vilib&gt;/zip/Add File to Zip.vi"/>
@@ -47,6 +47,7 @@
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
