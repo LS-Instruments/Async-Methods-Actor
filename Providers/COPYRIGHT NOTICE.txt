@@ -1,0 +1,3 @@
+Portions of code within this directory is copyright (c) National Instruments Corporation
+Licensed under the MIT License
+Original source: https://github.com/ni/actor-framework

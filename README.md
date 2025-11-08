@@ -127,3 +127,8 @@ A concrete subclass of this abstract message is used to send the caller informat
 ## The "Compl Notif with Error Msg.lvclass" abstract message
 
 This abstract class is a subclass of the “**Completion Notification Msg**" class, besides its parent class functionalities, this class merges the error generated as standard error output by the Async Method just called to the standard error input of the dynamic dispatch method "**Do Core.vi**". Hence concrete subclasses of this class must override the "Do Core.vi" method to perform suitable method calls.
+
+## Attribution
+
+This library incorporates portions of the [NI Actor Framework](https://github.com/ni/actor-framework), 
+which is Copyright (c) National Instruments Corporation and licensed under the MIT License.
