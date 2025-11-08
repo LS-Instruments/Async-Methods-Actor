@@ -35,9 +35,7 @@
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Classes" Type="Folder">
 		<Item Name="Actor Store.lvclass" Type="LVClass" URL="../Classes/Actor Store/Actor Store.lvclass"/>
-		<Item Name="INI Store.lvclass" Type="LVClass" URL="../Classes/INI Store/INI Store.lvclass"/>
 		<Item Name="Live Store.lvclass" Type="LVClass" URL="../Classes/Live Store/Live Store.lvclass"/>
-		<Item Name="Target Store.lvclass" Type="LVClass" URL="../Classes/Target Store/Target Store.lvclass"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
