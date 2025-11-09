@@ -60,7 +60,7 @@ If you change either the VI Icon, the VI Description, or the VI connector pane o
 
 ### Send the Async Messages to the Async Methods Actor
 
-Send each Async message through the corresponding **Send** method as you would normally do within the AF.
+You are now ready to call the two methods asynchronously from within your code, to this end send each Async message through the corresponding **Send** method as you would normally do within the AF.
 
 If you want to get more control over the asynchronous call you can wire a suitably configured copy of the "**Async Message Settings**" cluster to the message's **Send** methods as shown in the following picture:
 
