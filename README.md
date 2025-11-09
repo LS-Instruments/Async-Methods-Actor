@@ -38,7 +38,7 @@ The new **Async Methods Actor** will be created within the previous library, wit
 
 ### Create Async Messages
 
-In order to use the **Async Methods Actor** in your code you have to implement methods and the corresponding messages. As an example add two methods to the **Async Methods Actors** just created:
+In order to add some meaningful functionalities to the **Async Methods Actors** that you created you have to implement methods and the corresponding messages to be able to call them. As an example, add two methods to the **Async Methods Actors** just created:
 
 ![new methods](media/quick-start/new-methods.png)
 
