@@ -4,7 +4,7 @@
 
 A library that extends the Actor Framework to allow for async method execution.
 
-The **Async Methods Actor** is an actor-based library that implements an infrastructure for launching async methods. By making actors inherit from the **Async Methods Actor**, it is possible to launch any method without waiting for its conclusion, by sending messages child of the abstract message "**Async Message.lvclass**". This framework is especially useful for tasks that take a long time to execute which implemented as Actor methods would lock the actor until completion. The official way to implement those tasks in the Actor Framework is to code them as helper loops within the "Actor Core.vi". This however brings along the overhead of setting up a communication mechanism between Actor methods and the helper loop, thus voiding the advantage of OOP encapsulation. By means of this framework, you continue to benefit from OOP encapsulation of the Actor Framework also for long execution tasks without needing to implement boilerplate code.
+The **Async Methods Actor** is an actor-based library that implements an infrastructure for launching async methods. By making actors inherit from the **Async Methods Actor**, it is possible to launch any method without waiting for its conclusion, by sending messages child of the abstract message "**Async Message.lvclass**". This framework is especially useful for tasks that take a long time to execute which implemented as Actor methods would lock the actor until completion. In the Actor Framework, the official way to implement those tasks, without locking the Actor, is to code them as helper loops within the "Actor Core.vi". This however brings along the overhead of setting up a communication mechanism between Actor methods and the helper loop, thus voiding the advantage of OOP encapsulation. By means of this framework, you continue to benefit from OOP encapsulation of the Actor Framework also for long execution tasks without needing to implement boilerplate code.
 
 ## Steps required to use this library
 
@@ -12,7 +12,7 @@ The **Async Methods Actor** is an actor-based library that implements an infrast
 2. Install the **LSI Actor Framework Message Maker** by means of the VI Package Manager. You can find details about the package  <a href="https://www.vipm.io/package/ls_instruments_ag_lib_lsi_actor_framework_message_maker/" target="_blank">here</a>
 
 ### Create Async Methods Actors
-Right-click on a target within a LabVIEW project, in most cases it will be "My Computer" and click on the "Async Methods Actor" sub-menu:
+Right-click on a target within a LabVIEW project, in most cases it will be "My Computer" and click on the "New > Async Methods Actor" sub-menu:
 
 ![in target creation before](media/quick-start/in-target-creation-before.png)
 
