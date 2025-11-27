@@ -6,6 +6,8 @@ A library that extends the Actor Framework to allow for async method execution.
 
 The **Async Methods Actor** is an actor-based library that implements an infrastructure for launching async methods. By making actors inherit from the **Async Methods Actor**, it is possible to launch any method without waiting for its conclusion, by sending messages child of the abstract message "**Async Message.lvclass**". This framework is especially useful for tasks that take a long time to execute which implemented as Actor methods would lock the actor until completion. In the Actor Framework, the official way to implement those tasks, without locking the Actor, is to code them as helper loops within the "Actor Core.vi". This however brings along the overhead of setting up a communication mechanism between Actor methods and the helper loop, thus voiding the advantage of OOP encapsulation. By means of this framework, you continue to benefit from OOP encapsulation of the Actor Framework also for long execution tasks without needing to implement boilerplate code.
 
+***It’s important to note that Async Methods are not supposed to alter the input object; indeed, the output object is effectively discarded. This is because, otherwise, we would void the essence of the Actor Model. If the user wants to alter the current Actor object, he will need to use standard Actor messages.***
+
 ## Quick-Start Guide
 
 1. Install the **Async Methods Actor** VIPM Package by means of the VI Package Manager. The VIPM package can be found <a href="https://www.vipm.io/package/ls_instruments_ag_lib_async_methods_actor/" target="_blank">here</a> 
